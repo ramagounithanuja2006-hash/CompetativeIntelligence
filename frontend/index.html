@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CompIntel AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            <span>CompIntel <b>AI</b></span>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            AI System Online
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">COMPETITIVE INTELLIGENCE AGENT</p>
+
+                <h1>
+                    Turn competitor data into
+                    <span>strategic intelligence.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Collect competitor information, analyze it with AI,
+                    and ask questions using your stored intelligence.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="dashboard">
+
+            <!-- COLLECT DATA -->
+            <div class="card collect-card">
+
+                <div class="card-header">
+                    <div>
+                        <span class="card-label">01</span>
+                        <h2>Collect Intelligence</h2>
+                    </div>
+
+                    <div class="icon-box">＋</div>
+                </div>
+
+                <p class="card-description">
+                    Add competitor information and let the AI analyze
+                    important competitive signals.
+                </p>
+
+                <label>Company</label>
+                <input
+                    type="text"
+                    id="company"
+                    placeholder="e.g. Tesla"
+                >
+
+                <label>Source</label>
+                <input
+                    type="text"
+                    id="source"
+                    placeholder="e.g. Company Website"
+                >
+
+                <label>Competitive Data</label>
+                <textarea
+                    id="content"
+                    placeholder="Enter competitor news, product launches, pricing changes, hiring updates..."
+                ></textarea>
+
+                <button id="collectBtn" onclick="collectData()">
+                    Analyze & Store
+                    <span>→</span>
+                </button>
+
+                <div id="collectResult" class="result"></div>
+
+            </div>
+
+
+            <!-- ASK AI -->
+            <div class="card ask-card">
+
+                <div class="card-header">
+                    <div>
+                        <span class="card-label">02</span>
+                        <h2>Ask CompIntel AI</h2>
+                    </div>
+
+                    <div class="icon-box">✦</div>
+                </div>
+
+                <p class="card-description">
+                    Ask questions about the competitive intelligence
+                    stored in Hindsight memory.
+                </p>
+
+                <label>Your Question</label>
+
+                <textarea
+                    id="question"
+                    class="question-box"
+                    placeholder="What did Tesla change recently, and what competitive signals should we watch?"
+                ></textarea>
+
+                <button id="askBtn" onclick="askAI()">
+                    Ask Intelligence
+                    <span>→</span>
+                </button>
+
+                <div id="askResult" class="answer-box"></div>
+
+            </div>
+
+        </section>
+
+
+        <section class="workflow">
+
+            <div class="workflow-title">
+                <span>HOW IT WORKS</span>
+                <h2>From raw data to intelligence</h2>
+            </div>
+
+            <div class="workflow-grid">
+
+                <div class="workflow-item">
+                    <div class="workflow-number">01</div>
+                    <h3>Collect</h3>
+                    <p>
+                        Capture competitor information from different
+                        sources.
+                    </p>
+                </div>
+
+                <div class="workflow-item">
+                    <div class="workflow-number">02</div>
+                    <h3>Analyze</h3>
+                    <p>
+                        Groq AI identifies products, pricing, hiring,
+                        marketing and strategy signals.
+                    </p>
+                </div>
+
+                <div class="workflow-item">
+                    <div class="workflow-number">03</div>
+                    <h3>Remember</h3>
+                    <p>
+                        Hindsight stores competitive intelligence
+                        for future queries.
+                    </p>
+                </div>
+
+                <div class="workflow-item">
+                    <div class="workflow-number">04</div>
+                    <h3>Ask</h3>
+                    <p>
+                        Query your intelligence and receive contextual
+                        answers.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>CompIntel AI • Competitive Intelligence Agent</p>
+        <span>Powered by Groq + Hindsight</span>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CompIntel AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            <span>CompIntel <b>AI</b></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#collect">Collect Data</a>
+            <a href="#intelligence">Intelligence</a>
+        </div>
+
+        <button class="admin-btn">Admin</button>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="dashboard">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ● AI-POWERED COMPETITIVE INTELLIGENCE
+            </div>
+
+            <h1>
+                Know Your Competitors
+                <span>Before They Move.</span>
+            </h1>
+
+            <p>
+                Collect competitive data, analyze market signals,
+                and uncover strategic patterns with AI-powered intelligence.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="scrollToCollect()">
+                    Start Intelligence →
+                </button>
+
+                <button class="secondary-btn" onclick="askDemoQuestion()">
+                    Ask AI
+                </button>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="orbit-card card-one">
+                <span>◉</span>
+                <div>
+                    <small>PRODUCT SIGNAL</small>
+                    <strong>New Launch Detected</strong>
+                </div>
+            </div>
+
+            <div class="ai-circle">
+                <div class="ai-core">
+                    AI
+                </div>
+            </div>
+
+            <div class="orbit-card card-two">
+                <span>↗</span>
+                <div>
+                    <small>STRATEGY</small>
+                    <strong>Pattern Identified</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <span>01</span>
+            <h3>Collect</h3>
+            <p>Gather competitor information from multiple sources.</p>
+        </div>
+
+        <div class="stat-card">
+            <span>02</span>
+            <h3>Analyze</h3>
+            <p>AI identifies important competitive signals.</p>
+        </div>
+
+        <div class="stat-card">
+            <span>03</span>
+            <h3>Remember</h3>
+            <p>Hindsight stores intelligence for future analysis.</p>
+        </div>
+
+        <div class="stat-card">
+            <span>04</span>
+            <h3>Ask</h3>
+            <p>Query your intelligence memory using natural language.</p>
+        </div>
+
+    </section>
+
+
+    <!-- COLLECT DATA -->
+    <section class="workspace" id="collect">
+
+        <div class="section-heading">
+            <div class="badge">DATA COLLECTION</div>
+
+            <h2>
+                Feed Your
+                <span>Intelligence Engine.</span>
+            </h2>
+
+            <p>
+                Add competitor information and let CompIntel AI
+                extract meaningful competitive signals.
+            </p>
+        </div>
+
+
+        <div class="workspace-grid">
+
+            <!-- INPUT -->
+            <div class="glass-card">
+
+                <h3>Competitor Data</h3>
+
+                <label>Company</label>
+                <input
+                    id="company"
+                    type="text"
+                    placeholder="e.g. Tesla"
+                >
+
+                <label>Source</label>
+                <input
+                    id="source"
+                    type="text"
+                    placeholder="e.g. Company Website"
+                >
+
+                <label>Information</label>
+                <textarea
+                    id="content"
+                    rows="8"
+                    placeholder="Enter competitor information..."
+                ></textarea>
+
+                <button
+                    class="primary-btn full-btn"
+                    onclick="collectData()"
+                >
+                    Analyze Competitor →
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+            <div class="glass-card result-card">
+
+                <div class="result-header">
+                    <h3>AI Intelligence</h3>
+
+                    <span id="status" class="status">
+                        Waiting
+                    </span>
+                </div>
+
+                <div id="analysisResult" class="result-content">
+
+                    <div class="empty-state">
+                        <div class="empty-icon">✦</div>
+
+                        <h4>No intelligence yet</h4>
+
+                        <p>
+                            Submit competitor data to generate
+                            an AI-powered intelligence brief.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ASK AI -->
+    <section class="ask-section" id="intelligence">
+
+        <div class="section-heading">
+            <div class="badge">MEMORY INTELLIGENCE</div>
+
+            <h2>
+                Ask Your
+                <span>Competitive Memory.</span>
+            </h2>
+
+            <p>
+                Ask questions about previously collected competitor data.
+            </p>
+        </div>
+
+
+        <div class="ask-box">
+
+            <input
+                id="question"
+                type="text"
+                placeholder="What did Tesla change recently?"
+            >
+
+            <button
+                class="primary-btn"
+                onclick="askAgent()"
+            >
+                Ask AI →
+            </button>
+
+        </div>
+
+
+        <div
+            id="answerResult"
+            class="answer-result"
+        >
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+            <strong>CompIntel AI</strong>
+            <p>Competitive intelligence powered by AI + Hindsight.</p>
+        </div>
+
+        <span>Built for smarter competitive decisions.</span>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "TechNova",
+    "category": "AI Tools",
+    "description": "AI-powered productivity tools for modern teams."
+  },
+  {
+    "id": 2,
+    "name": "NextGen AI",
+    "category": "AI Platform",
+    "description": "Building intelligent enterprise solutions."
+  },
+  {
+    "id": 3,
+    "name": "ZenithTech",
+    "category": "Automation",
+    "description": "Smart automation and cloud solutions."
+  }
+]
